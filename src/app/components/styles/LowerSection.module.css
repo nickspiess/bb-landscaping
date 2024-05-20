@@ -136,4 +136,29 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
   }
 
+  .ctaSection {
+      margin: 0;
+      padding: 20px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      width: 100%;
+    background-color: rgba(32, 98, 34, 0.7);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .ctaTitle {
+      font-size: 32px;
+  }
+
+  .ctaText {
+      font-size: 18px;
+  }
+
+  .lowerBackground {
+      padding: 40px 40px 80px 40px;
+  }
+
 }

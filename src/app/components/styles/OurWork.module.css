@@ -367,9 +367,13 @@
     padding-left: 40px;
   }
 
-  .starsImg {
+  .familyImg, .qualityImg {
     width: 60%;
-    margin-top: 5px;
+  }
+
+  .starsImg {
+    width: 100%;
+    margin-top: 25px;
     height: 200px;
   }
 
@@ -393,6 +397,48 @@
 
   .qualityImg {
     padding-top: 5px;
+  }
+
+  .aboutUsContainer {
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    line-height: 1.5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .upperSection {
+    padding: 0;
+  }
+
+  .ourWork {
+    
+  }
+
+  .landingHeader {
+    position: relative;
+    padding: 40px 20px;
+    background-color: #4caf50; /* Example color for the landing header */
+    color: white;
+    text-align: center;
+  }
+
+  .infoSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 0;
+    background-color: #3e8e41;
+    color: white;
+    text-align: center;
+    z-index: 2; /* Ensure content is above the overlay */
+    position: relative;
   }
 
 }
