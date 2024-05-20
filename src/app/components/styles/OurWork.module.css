@@ -1,0 +1,398 @@
+/* OurWork.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.ourWork {
+  position: relative;
+  padding: 40px 20px;
+  background: linear-gradient(
+      rgba(1, 77, 1, 0.5), 
+      rgba(20, 92, 20, 0.5)
+    ),
+    url('/stockbackground.jpeg') no-repeat center center; /* Path to your background image */
+  background-size: cover; /* Ensures the background image covers the entire component */
+  color: white; /* Ensure text is readable on the background */
+  text-align: center;
+}
+
+.ourWork::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add an overlay to darken the background image */
+  z-index: 0;
+}
+
+.landingHeader {
+  position: relative;
+  padding: 40px 20px;
+  background-color: #4caf50; /* Example color for the landing header */
+  color: white;
+  text-align: center;
+
+}
+
+
+.infoSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px 0;
+  background-color: #3e8e41;
+  color: white;
+  text-align: center;
+  z-index: 2; /* Ensure content is above the overlay */
+  position: relative;
+}
+
+.infoSection div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoSection h3 {
+  margin-bottom: 10px;
+}
+
+.infoSection img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.familyImg {
+  max-height: 100px;
+}
+
+.starsHeader {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.starsImg {
+  width: 60%;
+}
+
+.qualityImg {
+  max-height: 100px;
+}
+
+
+
+.upperSection {
+  display: flex;
+  width: 100%;
+  gap: 10%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: -40px;
+}
+
+.aboutUsContainer {
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  line-height: 1.5;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.aboutTitle {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.workTitle {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.aboutText {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.aboutButton {
+  border: none;
+  border-radius: 25px; /* More rounded corners for a modern look */
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 12px 20px; /* Adjusted padding for better size */
+  background: linear-gradient(135deg, rgb(64, 160, 64), rgb(5, 77, 5)); /* Gradient background */
+  color: white; /* Ensure text is readable */
+  font-size: 16px; /* Adjusted font size for better readability */
+  font-weight: bold; /* Bold text for emphasis */
+  transition: background 0.5s ease-in, transform 0.3s ease-in, box-shadow 0.3s ease-in; /* Smooth transitions */
+  letter-spacing: 1.5px;
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.aboutButton:hover {
+  background: linear-gradient(135deg, rgb(0, 62, 0), rgb(64, 160, 64)); /* Inverted gradient on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  font-weight: 600;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+.image {
+  border-radius: 12px;
+  height: 400px;
+  width: 600px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1; /* Ensure content is above the overlay */
+}
+
+.carouselContainer {
+  width: 50%;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.testimonialsCarousel {
+  max-width: 60%;
+  margin-bottom: 40px;
+}
+
+.testimonials {
+  color: black;
+
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.testimonialsHead {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.testimonialContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lowerSection {
+  width: 80%;
+}
+
+.testimonialBox {
+  line-height: 2;
+  background: rgba(196, 196, 196, 0.8);
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  z-index: 1000;
+  color:  black;
+  border: 1px solid rgb(202, 202, 202);
+  box-shadow: 2px 2px 8px 2px rgba(186, 186, 186, 0.9);
+}
+
+.testimonialText {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.testimonialName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+.infoSection h3 {
+  letter-spacing: 1.5px;
+  text-decoration: underline;
+}
+
+.infoSection img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.familyImg {
+  max-height: 125px;
+}
+
+.starsHeader {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.familyHeader, .qualityHeader {
+  margin-bottom: 20px;
+}
+
+.starsImg {
+  width: 70%;
+  margin-top: 30px;
+}
+
+.qualityImg {
+  max-height: 125px;
+}
+
+@media (max-width: 768px) {
+  .upperSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .image {
+    border-radius: 12px;
+    height: 400px;
+    width: 600px;
+  }
+
+  .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .carousel {
+  }
+
+  .carouselContainer {
+    width: 90%;
+  }
+
+  .aboutUsContainer {
+    width: 80%;
+    margin-top: -40px;
+    margin-bottom: 100px;
+  }
+
+  .testimonialsHead {
+    margin-top: 80px;
+  }
+
+  .infoSection div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .qualityImg, .familyImg  {
+    width: 40%;
+    padding-top: 10px;
+  }
+  .qualityHeader, .familyHeader {
+    margin-bottom: 80px;
+  }
+
+  .starsImg {
+    width: 80%;
+    padding-top: 10px;
+  }
+  .starsHeader {
+    margin-bottom: 80px;
+  }
+  .infoSection h3 {
+    font-size: 18px;
+  }
+
+  .lowerSection {
+    width: 100%;
+  }
+
+  .testimonialContainer {
+    width: 100%;
+  }
+  .contactInfo {
+    margin-right: 0;
+    width: 20%;
+  }
+  .socialLinks {
+    width: 40%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .familyHeader {
+    padding-left: 40px;
+  }
+
+  .starsImg {
+    width: 60%;
+    margin-top: 5px;
+    height: 200px;
+  }
+
+  .infoSection h3 {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .infoSection div {
+    margin: 5px;
+  }
+
+  .starsHeader, .familyHeader, .qualityHeader {
+    font-weight: 700;
+  }
+
+  .qualityHeader, .familyHeader {
+    margin-bottom: 40px;
+  }
+
+  .qualityImg {
+    padding-top: 5px;
+  }
+
+}

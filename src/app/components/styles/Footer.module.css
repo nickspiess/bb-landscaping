@@ -1,0 +1,126 @@
+/* Footer.module.css */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  .contactCol {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .navCol li {
+    padding-top: 5px;
+}
+
+  .contactCol li {
+      padding-top: 10px;
+  }
+  .contactCol ul {
+    margin-top: 10px;
+}
+
+  .socialCol {
+      justify-content: end;
+      align-items: flex-end;
+      flex-direction: row;
+      text-align: right;
+  }
+  
+  .col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .col ul {
+    list-style: none;
+
+  }
+  
+  .col ul li {
+    margin-bottom: 10px;
+    color: #ccc;
+  }
+  
+  .col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .col ul li a:hover {
+    color: rgb(53, 142, 65);
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    align-items: flex-end;
+
+  }
+  
+  .socialIcons a {
+    display: inline-block;
+  }
+  
+  .socialIcons img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%); /* Ensures icons are white */
+    transition: filter 0.3s;
+  }
+  
+  .socialIcons img:hover {
+    filter: invert(70%);
+  }
+  
+  .bottomRow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-bottom: -20px;
+    color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .col {
+      min-width: unset;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .socialIcons {
+      justify-content: center;
+    }
+  }
