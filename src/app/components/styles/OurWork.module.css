@@ -453,7 +453,7 @@
   }
 
   .familyImg {
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .starsImg {
@@ -479,10 +479,6 @@
 
   .qualityHeader, .familyHeader {
     margin-bottom: 40px;
-  }
-
-  .qualityImg {
-    padding-top: 5px;
   }
 
   .aboutUsContainer {
