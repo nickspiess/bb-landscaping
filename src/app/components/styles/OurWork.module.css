@@ -88,7 +88,9 @@
 }
 
 .starsImg {
-  width: 60%;
+  margin-top: -20px;
+  background-color: rgba(245, 249, 145, 0.33);
+  width: 50%;
 }
 
 .qualityImg {
@@ -101,13 +103,14 @@
   display: flex;
   width: 100%;
   gap: 10%;
+  padding: 60px;
   padding-left: 40px;
   padding-right: 40px;
-  margin-top: -40px;
+  margin-bottom: 50px;
 }
 
 .aboutUsContainer {
-  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 8px 2px rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   line-height: 1.5;
   padding: 40px;
@@ -121,15 +124,22 @@
 }
 
 .aboutTitle {
-  font-size: 32px;
-  margin-bottom: 40px;
+  font-size: 42px;
+  margin-bottom: 50px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .workTitle {
-  font-size: 28px;
-  margin-bottom: 40px;
+  font-size: 32px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  padding: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .aboutText {
@@ -141,8 +151,8 @@
   border: none;
   border-radius: 25px; /* More rounded corners for a modern look */
   cursor: pointer;
-  margin-top: 30px;
-  padding: 12px 20px; /* Adjusted padding for better size */
+  margin-top: 40px;
+  padding: 14px 45px; /* Adjusted padding for better size */
   background: linear-gradient(135deg, rgb(64, 160, 64), rgb(5, 77, 5)); /* Gradient background */
   color: white; /* Ensure text is readable */
   font-size: 16px; /* Adjusted font size for better readability */
@@ -192,22 +202,28 @@
 }
 
 .testimonialsCarousel {
-  max-width: 60%;
+  max-width: 80%;
   margin-bottom: 40px;
+}
+
+.starsImg {
+  padding: 0;
 }
 
 .testimonials {
   color: black;
 
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
 }
 
 .testimonialsHead {
+  text-align: center;
+  margin: auto;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   color: white;
-  font-size: 36px;
+  font-size: 44px;
   font-weight: 800;
   letter-spacing: 3px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -217,6 +233,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 140px;
 }
 
 .lowerSection {
@@ -228,22 +245,22 @@
   background: rgba(196, 196, 196, 0.8);
   margin-bottom: 20px;
   padding: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 50px;
   border-radius: 20px;
   z-index: 1000;
   color:  black;
-  border: 1px solid rgb(202, 202, 202);
-  box-shadow: 2px 2px 8px 2px rgba(186, 186, 186, 0.9);
+  box-shadow: 0px 0px 8px 1px rgba(186, 186, 186, 0.9);
 }
 
 .testimonialText {
-  font-size: 18px;
+  font-size: 22px;
   font-style: italic;
 }
 
 .testimonialName {
-  font-size: 16px;
+  font-size: 20px;
+  margin-top: 20px;
   font-weight: bold;
 }
 
@@ -261,7 +278,8 @@
 }
 
 .familyImg {
-  max-height: 125px;
+  max-height: 115px;
+  margin-top: 10px;
 }
 
 .starsHeader {
@@ -274,12 +292,37 @@
 }
 
 .starsImg {
-  width: 70%;
+  width: 55%;
   margin-top: 30px;
 }
 
 .qualityImg {
+  margin-top: 5px;
   max-height: 125px;
+}
+
+@media (max-width: 1208px) {
+
+  .starsImg {
+    width: 55%;
+    margin-top: 40px;
+  }
+  
+
+}
+
+@media (max-width: 1008px) {
+
+  .starsImg {
+    width: 55%;
+    margin-top: 55px;
+  }
+
+  .qualityImg {
+    margin-top: 15px;
+  }
+  
+
 }
 
 @media (max-width: 768px) {
@@ -288,6 +331,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 0;
+  }
+
+  .aboutUsContainer {
+    width: 90vw;
   }
 
   .image {
@@ -300,6 +347,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .aboutText {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  .aboutTitle {
+    margin-bottom: 35px;
   }
   
 
@@ -335,7 +390,7 @@
 
   .starsImg {
     width: 80%;
-    padding-top: 10px;
+    padding-top: 0px;
   }
   .starsHeader {
     margin-bottom: 80px;
@@ -359,26 +414,57 @@
     width: 40%;
   }
 
+  .workTitle {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 40px;
+  }
+
 }
 
 @media (max-width: 500px) {
 
+  .aboutButton {
+    margin-bottom: 25px;
+  }
+
+  .workTitle {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 40px;
+  }
+
   .familyHeader {
     padding-left: 40px;
+    margin-bottom: 0px;
+    margin-left: 10px;
   }
+
+
 
   .familyImg, .qualityImg {
     width: 60%;
   }
 
+  .familyImg {
+    margin-top: 5px;
+  }
+
   .starsImg {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 40px;
+    padding-top: 0;
     height: 200px;
   }
 
   .infoSection h3 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     text-decoration: none;
   }

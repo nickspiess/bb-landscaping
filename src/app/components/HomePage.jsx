@@ -27,14 +27,14 @@ const HomePage = () => {
                 <p><a className={styles.contactEmail} href="mailto:Ben.griffin.landscaping@gmail.com">Ben.griffin.landscaping@gmail.com</a></p>
             </div>
             <div className={styles.socialLinks}>
-                <a href="https://www.facebook.com/ben.griffin.landscaping" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                    <Image src="/FacebookLink.png" alt="Facebook" width={24} height={24} />
+                <a className={styles.linkContainer} href="https://www.facebook.com/ben.griffin.landscaping" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                    <Image className={styles.socialImage}  src="/FacebookLink.png" alt="Facebook" width={24} height={24} />
                 </a>
-                <a href="https://nextdoor.com/pages/bb-landscape-llc-hugo-mn/" aria-label="Nextdoor" target="_blank" rel="noopener noreferrer">
-                    <Image src="/nextdoor.svg" alt="Nextdoor" width={24} height={24} />
+                <a className={styles.linkContainer} href="https://nextdoor.com/pages/bb-landscape-llc-hugo-mn/" aria-label="Nextdoor" target="_blank" rel="noopener noreferrer">
+                    <Image className={styles.socialImage} src="/nextdoor.svg" alt="Nextdoor" width={24} height={24} />
                 </a>
-                <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                    <Image src="/InstaLink.png" alt="Instagram" width={24} height={24} />
+                <a className={styles.linkContainer} href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <Image className={styles.socialImage} src="/InstaLink.png" alt="Instagram" width={24} height={24} />
                 </a>
             </div>
           </div>

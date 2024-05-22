@@ -57,8 +57,9 @@ const OurWork = () => {
           <div className={styles.upperSection}>
             <div className={styles.aboutUsContainer}>
               <h3 className={styles.aboutTitle}>Who We Are</h3>
-              <p className={styles.aboutText}>Brief explanation of the company and mission.  Lots of filler text to show the width of the text box</p>
+              <p className={styles.aboutText}>Brief explanation of your company and mission.  Lots of filler text to show the width of this text box</p>
               <p className={styles.aboutText}>Highlight how the differentiation from the competition occurs.<br/></p>
+              <p className={styles.aboutText}>Any other information you'd like to share with your customer base.<br/></p>
               <button className={styles.aboutButton}>Contact Us</button>
             </div>
             <div className={styles.carouselContainer}>

@@ -50,19 +50,23 @@
 
 .socialLinks {
   margin-right: 30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.socialLinks a {
+.linkContainer{
   margin-left: 10px;
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .socialLinks img {
   width: 24px; /* or any size that fits your design */
   height: 24px;
   transition: opacity 0.3s ease;
-  margin-left: 10px;
 }
 
 .socialLinks a:hover img {
@@ -70,14 +74,14 @@
 }
 
 .navbar {
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   flex-wrap: nowrap;
   position: relative;
-  background: linear-gradient(0deg, rgba(176, 215, 132, 0.8) 0%, rgba(167, 207, 121, 0.8) 26%, rgba(171, 206, 130, 0.8) 63%, rgba(176, 221, 124, 0.8) 80%, rgba(199, 239, 153, 0.6) 100%);
-
+  background: linear-gradient(0deg, rgba(159, 249, 64, 0.6) 0%, rgba(195, 242, 144, 0.8) 20%, rgba(201, 246, 153, 0.8) 50%, rgba(195, 242, 144, 0.8) 80%, rgba(159, 249, 64, 0.6) 100%);
 }
 
 .logoContainer {
@@ -86,14 +90,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
   margin-right: auto; /* Align logo to the left */
 }
 
 .logoContainer p {
   margin: 0;
-  font-size: 12px;
-  color: #0d3307;
+  font-size: 13px;
+  color: #2e2e2e;
+  font-weight: 600;
+  font-family: Montserrat;
+}
+
+.logoImage {
+  height: 100px;
+  width: auto;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .burger {
@@ -116,31 +128,30 @@
   width: 24px;
   height: 3px;
   border-radius: 5px;
-  background-color: rgb(97, 95, 95);
+  background-color: rgb(7, 62, 1);
 }
 
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 20px; /* Adjust the gap between links */
+  gap: 37.5px; /* Adjust the gap between links */
   align-items: center;
 }
 
 .navLink {
-  letter-spacing: 1.5px;
   color: rgb(0, 0, 0);
-  transition: color 0.3s ease-in, transform 0.3s ease-in, border-bottom 0.3s ease-in;
+  transition: color 0.2s ease-in, transform 0.3s ease-in, border-bottom 0.3s ease-in;
   text-decoration: none;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px 15px; /* Add padding for better spacing */
   position: relative; /* For border effects */
   font-weight: 800;
 }
 
 .navLink:hover {
-  color: #417901;
-  border-bottom: 2px solid #417901;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
 
 }
 
@@ -288,6 +299,21 @@
 
 @media (max-width: 992px) {
 
+
+  .socialImage {
+    margin-left: 0;
+  }
+
+  .linkContainer {
+
+  }
+  
+  .socialLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  }
+
   .navbar {
     flex-direction: column;
     gap: 25px;
@@ -295,14 +321,19 @@
 
   .topBar {
     flex-direction: row;
-    gap: 10px
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
   }
   .contactInfo {
     margin: 0;
+    text-align: center;
   }
 
   .contactAddress {
-    display: none;
+
   }
 
   .quoteDesktop {
@@ -322,7 +353,7 @@
   .navOpen {
     padding: 0px;
     padding-bottom: 10px;
-    margin-top: -10px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -379,7 +410,7 @@
   .navOpen {
     padding: 0px;
     padding-bottom: 10px;
-    margin-top: -10px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -392,22 +423,36 @@
   }
 
   .quote {
-    margin-top: 30px;
+    margin-top: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .quoteInMenu {
     display: block;
-    margin-top: 25px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     text-align: center;
+    border-radius: 32px;
   }
 }
 
 @media (max-width: 768px) {
 
+  .socialImage {
+    margin: 0;
+  }
+
+  .linkContainer {
+    margin: 0;
+    gap: 20px;
+  }
+
   .topBar {
-    flex-direction: row;
-    gap: 10px
+    gap: 10px;
+    flex-direction: column;
   }
   .contactInfo {
     margin-right: 0;
@@ -416,6 +461,16 @@
 
   .heroContent h2 {
     font-size: 32px;
+  }
+
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 7.5px;
+    margin-top: 5px;
+    gap: 20px;
   }
 
   .heroContent p {
@@ -427,8 +482,18 @@
     padding: 8px 15px;
   }
 
-  .contactEmail, .contactAddress {
+  .contactAddress {
     display: none;
+  }
+
+  .contactEmail {
+    
+  }
+
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .quote {
@@ -447,6 +512,13 @@
 @media (max-width: 576px) {
   .heroContent h2 {
     font-size: 28px;
+  }
+
+  .heroTitle {
+    font-size: 48px;
+    width: 80%;
+    margin: auto;
+    margin-top:40px;
   }
 
   .heroContent p {
@@ -479,4 +551,12 @@
     display: block;
     text-align: center;
   }
+  .heroSection {
+    height: 70vh;
+  }
+
+  .heroContent {
+    margin-top: -120px;
+  }
+  
 }
