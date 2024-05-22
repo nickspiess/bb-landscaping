@@ -427,6 +427,14 @@
 
 @media (max-width: 500px) {
 
+  .qualityHeader {
+    margin-bottom: 40px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
   .aboutButton {
     margin-bottom: 25px;
   }
