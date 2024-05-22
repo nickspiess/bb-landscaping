@@ -473,10 +473,10 @@
   }
 
   .starsImg {
-    width: 100%;
+    width: 140px;
     margin-top: 40px;
     padding-top: 0;
-    height: 200px;
+    height: auto;
   }
 
   .infoSection h3 {
@@ -540,3 +540,17 @@
   }
 
 }
+
+@media (max-width: 450px) {
+.familyImg {
+  margin-top: 10px;
+}
+
+}
+
+@media (max-width: 442px) {
+  .familyImg {
+    margin-top: 0px;
+  }
+  
+  }
