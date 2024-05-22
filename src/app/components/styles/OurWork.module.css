@@ -425,10 +425,14 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
   .qualityHeader {
     margin-bottom: 40px;
+  }
+
+  .qualityImg {
+    margin-top: 10px;
   }
 
 }
@@ -457,15 +461,15 @@
 
 
   .familyImg, .qualityImg {
-    width: 60%;
+    width: 75px;
   }
 
   .qualityImg {
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   .familyImg {
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   .starsImg {
